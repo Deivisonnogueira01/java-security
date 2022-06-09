@@ -26,7 +26,7 @@ public class RegraService implements RegraServiceInterface{
 
 	@Override
 	public long delete(long idRegra) {
-		// TODO Auto-generated method stub
+		
 		
 		
 		
@@ -35,7 +35,7 @@ public class RegraService implements RegraServiceInterface{
 
 	@Override
 	public Regra update(Regra regra) {
-		// TODO Auto-generated method stub
+		
 		
 		return repository.save(regra);
 		
@@ -43,13 +43,11 @@ public class RegraService implements RegraServiceInterface{
 
 	@Override
 	public Regra findById(long id) {
-		// TODO Auto-generated method stub
 		return repository.findById(id);
 	}
 
 	@Override
 	public List<Regra> listAll() {
-		// TODO Auto-generated method stub
 		return repository.findAll();
 	}
 

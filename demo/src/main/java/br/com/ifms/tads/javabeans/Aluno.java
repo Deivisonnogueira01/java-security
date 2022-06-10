@@ -20,7 +20,7 @@ public class Aluno {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idAluno;
 
-	private String nome;
+	private String name;
 
 	@Column(name = "email", unique = true)
 	private String email;

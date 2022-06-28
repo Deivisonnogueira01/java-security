@@ -7,4 +7,5 @@ import br.com.ifms.tads.javabeans.Conta;
 
 public interface ContaRepository extends JpaRepository<Conta, Long>{
 
+    Conta findByUsername(String name);
 }

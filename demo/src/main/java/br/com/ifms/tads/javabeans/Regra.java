@@ -10,8 +10,8 @@ import lombok.Data;
 @Entity
 @Data
 public class Regra {
-//	@Id
-//	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private long idRegra;
 	private String nomeRegra;
 	

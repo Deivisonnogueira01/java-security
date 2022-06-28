@@ -1,5 +1,5 @@
-/*package br.com.ifms.tads.tadsConfig;
-
+package br.com.ifms.tads.tadsConfig;
+/* 
 import org.apache.catalina.authenticator.SpnegoAuthenticator.AuthenticateAction;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -35,4 +35,5 @@ public class webSecurityConfig  extends WebSecurityConfigurerAdapter {
          .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
          
     }
-}*/
+}
+*/

@@ -17,7 +17,7 @@ public class AlunoService implements AlunoServiceInterface {
     }
 
     @Override
-    public long delete(long idRegra) {
+    public long delete(long idAluno) {
         // TODO Auto-generated method stub
         return 0;
     }

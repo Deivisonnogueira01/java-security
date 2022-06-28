@@ -1,7 +1,12 @@
 package br.com.ifms.tads.resource;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -40,11 +45,16 @@ public Aluno somar(@RequestBody Aluno aluno){
 	
 	@PostMapping(value = "/salvar")
 	@ResponseBody
-	public double subtrair(@RequestParam double n1, @RequestParam double n2){ 
-			
-			return n1 - n2;
+	public ResponseEntity<?> saveAluno(@Valid @RequestBody Aluno aluno){
+		return new ResponseEntity<>(service.addAluno(aluno), HttpStatus.CREATED);
 			
 		}
 	
-	
+	@DeleteMapping(path = "/{id}")
+	@PreAuthorize("hasRole('ADMIN')")
+	public ResponseEntity<?> delete(@PathVariable Long id){
+		//existeAluno(id);
+		service.delete(id);
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
 }

@@ -7,7 +7,7 @@ import br.com.ifms.tads.javabeans.Aluno;
 public interface AlunoServiceInterface {
     
     
-	Aluno addRegra(Aluno aluno);
+	Aluno addAluno(Aluno aluno);
 	
 	long delete(long idRegra);
 	

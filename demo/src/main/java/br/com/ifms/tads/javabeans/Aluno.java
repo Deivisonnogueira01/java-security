@@ -2,6 +2,7 @@ package br.com.ifms.tads.javabeans;
 
 import java.util.List;
 
+ 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,16 +17,16 @@ import lombok.Data;
 @Data
 public class Aluno {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idAluno;
 
 	private String name;
 
-	@Column(name = "email", unique = true)
+//	@Column(name = "email", unique = true)
 	private String email;
 
-	@OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL)
+//	@OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL)
 	private List<Conta> conta;
 
 }

@@ -14,8 +14,8 @@ import lombok.Data;
 @Data
 public class Conta {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idConta;
 	private String username;
 	private String password;
@@ -25,12 +25,12 @@ public class Conta {
 	private boolean credencialNaoExpira;
 	private boolean habilitada;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name= "idAluno")
+//	@ManyToOne(cascade = CascadeType.ALL)
+//	@JoinColumn(name= "idAluno")
 	private Aluno aluno;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name= "idRegra")
+//	@ManyToOne(cascade = CascadeType.ALL)
+//	@JoinColumn(name= "idRegra")
 	private Regra regra;
 	
 	

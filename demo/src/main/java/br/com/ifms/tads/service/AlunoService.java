@@ -2,13 +2,16 @@ package br.com.ifms.tads.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import br.com.ifms.tads.javabeans.Aluno;
 import br.com.ifms.tads.service.interfaces.AlunoServiceInterface;
 
+@Service
 public class AlunoService implements AlunoServiceInterface {
 
     @Override
-    public Aluno addRegra(Aluno aluno) {
+    public Aluno addAluno(Aluno aluno) {
         // TODO Auto-generated method stub
         return null;
     }
